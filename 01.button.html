@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+
+        /* 注意transition-delay跟z-index的用法 */
+        /* https://codepen.io/comehope/pen/eKqZjy */
+
+        * {
+            /* reset */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* 按鈕置中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* 背景黑 */
+            background-color: black;
+        }
+
+        .button {
+            /* 形狀 */
+            width: 10rem;
+            height: 3rem;
+            border: 3px solid rgb(255, 125, 125);
+            border-radius: 0.5rem;
+            /* 字置中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* 字顏色 */
+            color: rgb(255, 125, 125);
+            /* 字體 */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* 字間距 */
+            letter-spacing: 0.4rem;
+            /* 字粗體 */
+            font-weight: 700;
+            /* 字大寫 */
+            text-transform: uppercase;
+
+            overflow: hidden;
+
+            position: relative;
+
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            color: black;
+        }
+
+        .button span {
+            position: absolute;
+            width: 26%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: rgb(255, 125, 125);
+            transform: translateY(150%);
+            left: calc((var(--n) - 1) * 25%);
+            transition: .5s;
+            transition-delay: calc((var(--n) - 1) * 0.1s);
+            /* z-index: -1; 這樣才不會把字遮住 */
+            z-index: -1;
+        }
+
+        .button:hover span {
+            transform: translateY(0) scale(2);
+        }
+
+        span:nth-child(1) {
+            --n: 1;
+        }
+
+        span:nth-child(2) {
+            --n: 2;
+        }
+
+        span:nth-child(3) {
+            --n: 3;
+        }
+
+        span:nth-child(4) {
+            --n: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">Hello<span></span><span></span><span></span><span></span></div>
+    <!-- 放四個span做hover特效 -->
+</body>
+
+</html>
