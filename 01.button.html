@@ -10,6 +10,7 @@
 
         /* 注意transition-delay跟z-index的用法 */
         /* https://codepen.io/comehope/pen/eKqZjy */
+        /* https://www.w3schools.com/cssref/css3_pr_transition-delay.asp */
 
         * {
             /* reset */
@@ -69,6 +70,7 @@
             left: calc((var(--n) - 1) * 25%);
             transition: .5s;
             transition-delay: calc((var(--n) - 1) * 0.1s);
+            /* The transition-delay property specifies when the transition effect will start. */
             /* z-index: -1; 這樣才不會把字遮住 */
             z-index: -1;
         }
