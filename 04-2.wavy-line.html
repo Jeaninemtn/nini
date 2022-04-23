@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 置中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #decdcd;
+        }
+
+        .wave {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            overflow: hidden;
+            /* 有設定overflow-hidden才不會看到位移 */
+        }
+
+        .wave::before {
+            content: 'aaaaaaaaaaaaa';
+            position: absolute;
+            top: -42px;
+            left: 0;
+            font-size: 4em;
+            /* 位置 字大小一定要設定 */
+            color: transparent;
+            /* content顏色改成透明 */
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #fff;
+            animation: animate 1s linear infinite;
+        }
+        @keyframes animate {
+            0% {
+                transform: translateX(-1px);
+            }
+            100% {
+                transform: translateX(-100px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wave"></div>
+</body>
+</html>
