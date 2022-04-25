@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        ul {
+            position: relative;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 4rem;
+            /* Prefix required. Even Firefox only supports the -webkit- prefix */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgb(249, 137, 163);
+            color: transparent;
+            letter-spacing: 0.3rem;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            color: var(--clr); 
+            /* 顏色使用變數形式 */
+            border: 5px solid #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="">
+            <a href="#">&nbsp;Home&nbsp;</a>
+        </li>
+        <li style="">
+            <a href="#">&nbsp;About&nbsp;</a>
+        </li>
+        <li style="">
+            <a href="#">&nbsp;Services&nbsp;</a>
+        </li>
+        <li style="">
+            <a href="#">&nbsp;Team&nbsp;</a>
+        </li>
+        <li style="">
+            <a href="#">&nbsp;Contact&nbsp;</a>
+        </li>
+    </ul>
+</body>
+
+</html>
