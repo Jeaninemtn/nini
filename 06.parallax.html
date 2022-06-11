@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax scrolling</title>
+    <!-- https://www.w3schools.com/howto/howto_css_parallax.asp -->
+
+    <style>
+
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .bgimg {
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            opacity: 0.65;
+
+            min-height: 400px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bgimg-1 {
+            background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);
+        }
+
+        .bgimg-2 {
+            background-image: url(https://www.w3schools.com/howto/img_parallax2.jpg);
+        }
+
+        .bgimg-3 {
+            background-image: url(https://www.w3schools.com/howto/img_parallax3.jpg);
+        }
+
+        .caption {
+            padding: 10px 20px;
+            background-color: #454545;
+        }
+
+        .caption h1 {
+            color: #fff;
+            letter-spacing: 0.6rem;
+        }
+
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .paragraph p {
+            width: 80%;
+            margin-top: 1rem;
+            text-align: justify;
+            line-height: 1.6rem;
+            color: #454545;
+        }
+
+        .paragraph-dark {
+            width: 100%;
+            background-color: #a1a1a1;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bgimg bgimg-1">
+            <div class="caption">
+                <h1>SCROLL DOWN</h1>
+            </div>
+        </div>
+        <!-- 段落 -->
+        <div class="paragraph">
+            <h2>lorem</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis, ad necessitatibus ratione, at repellendus dolores adipisci ex atque fugit eveniet quam a sequi ipsam quis voluptatem nobis fuga magni!
+                Et distinctio at odio eligendi modi exercitationem architecto fugit officiis unde commodi eveniet nemo dicta, facilis quisquam, nulla velit ab fugiat temporibus dolorum? Odio, aperiam accusantium! Dicta iste corporis aliquid.
+                Cum, iure officiis, perferendis nemo distinctio voluptas dolorum repudiandae reprehenderit, porro accusantium libero! Rem temporibus, necessitatibus soluta fugiat qui dolorum quisquam, debitis impedit minima repudiandae consequatur accusantium omnis rerum! Harum?
+            </p>
+        </div>
+        <div class="bgimg bgimg-2"></div>
+        <!-- 段落 -->
+        <div class="paragraph paragraph-dark">
+            <h2>lorem</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis, ad necessitatibus ratione, at repellendus dolores adipisci ex atque fugit eveniet quam a sequi ipsam quis voluptatem nobis fuga magni!
+                Et distinctio at odio eligendi modi exercitationem architecto fugit officiis unde commodi eveniet nemo dicta, facilis quisquam, nulla velit ab fugiat temporibus dolorum? Odio, aperiam accusantium! Dicta iste corporis aliquid.
+                Cum, iure officiis, perferendis nemo distinctio voluptas dolorum repudiandae reprehenderit, porro accusantium libero! Rem temporibus, necessitatibus soluta fugiat qui dolorum quisquam, debitis impedit minima repudiandae consequatur accusantium omnis rerum! Harum?
+            </p>
+        </div>
+        <div class="bgimg bgimg-3"></div>
+        <!-- 段落 -->
+        <div class="paragraph">
+            <h2>lorem</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reiciendis, ad necessitatibus ratione, at repellendus dolores adipisci ex atque fugit eveniet quam a sequi ipsam quis voluptatem nobis fuga magni!
+                Et distinctio at odio eligendi modi exercitationem architecto fugit officiis unde commodi eveniet nemo dicta, facilis quisquam, nulla velit ab fugiat temporibus dolorum? Odio, aperiam accusantium! Dicta iste corporis aliquid.
+                Cum, iure officiis, perferendis nemo distinctio voluptas dolorum repudiandae reprehenderit, porro accusantium libero! Rem temporibus, necessitatibus soluta fugiat qui dolorum quisquam, debitis impedit minima repudiandae consequatur accusantium omnis rerum! Harum?
+            </p>
+        </div>
+        <div class="bgimg bgimg-1"></div>
+    </div>
+</body>
+</html>
