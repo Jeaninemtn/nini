@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: 1px solid yellowgreen; */
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            background: transparent linear-gradient(270deg, #b7f29d 0%, #ade7ff 100%) 0% 0% no-repeat padding-box;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: -3;
+
+        }
+
+        .row {
+            width: 100%;
+            height: 100%;
+            background: url(https://cdn.femashr.com/wp-content/uploads/2022/03/text-recommend%402x.png) no-repeat;
+            background-size: contain;
+            background-position: 100% 100%;
+            z-index: -2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item {
+            width: 500px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px 20px;
+            position: relative;
+        }
+
+
+        .client-info {
+            width: 100%;
+            height: 50px;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .logo-name {
+            height: 50px;
+        }
+
+        .content {
+            margin-top: 15px;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+        }
+
+        h6 {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            color: #00afbf;
+            background-color: #e0fcff;
+            border-radius: 20px;
+        }
+
+        .icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        svg {
+            position: absolute;
+            width: 540px;
+            height: 115%;
+            left: -20px;
+            top: -20px;
+            fill: transparent;
+            overflow: initial;
+            z-index: -1;
+        }
+
+        svg rect {
+            width: 100%;
+            height: 100%;
+            stroke: #6bc9d2;
+            stroke-width: 1.2;
+            fill: transparent;
+        }
+
+        .quot {
+            position: absolute;
+            top: -40px;
+            width: 60px;
+        }
+
+        .quot img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="item">
+                <a>
+                    <div class="client-info">
+                        <img class="logo" src="https://cdn.femashr.com/wp-content/uploads/2022/03/avatar-hi-lo.png">
+                        <img class="logo-name"
+                            src="https://cdn.femashr.com/wp-content/uploads/2022/03/recommend-logo-hi-lo.png">
+                    </div>
+                    <div class="content ">
+                        <h4>薪資試算 - 檢核 - 百人員工發薪兩天內完成！</h4>
+                        <h6>公式設定靈活有彈性，大幅減少算薪同仁加班時間！</h6>
+                    </div>
+                    <div class="footer">
+                        <div class="icon">
+                            <img src="https://cdn.femashr.com/wp-content/uploads/2022/03/icon-recommend-payroll.svg">
+                            <p>薪資</p>
+                        </div>
+                        <div class="author">
+                            河洛半導體 / 人資副理
+                        </div>
+                    </div>
+                    <svg>
+                        <rect rx="10"></rect>
+                    </svg>
+                    <div class="quot">
+                        <img src="https://cdn.femashr.com/wp-content/uploads/2022/03/icon-quotation-payroll.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
